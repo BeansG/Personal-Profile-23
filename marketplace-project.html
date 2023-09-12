@@ -1,0 +1,136 @@
+<!-- <script src="https://kit.fontawesome.com/bffeb5711e.js" crossorigin="anonymous"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Allows site to be scaled for mobiles etc. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Backend</title>
+    <!-- css file that evens out the differneces between diffferent browsers -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- font awesome link to access images font etc. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link to google fonts used for the site -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/bffeb5711e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- hamburger navigation -->
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">What I Do</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+
+
+    <section class="intro" >
+        <h1 class="section__title section__title--intro">
+          Marketplace Backend
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+          Backend for WheelBorrow Application
+        </p>
+        <img
+          src="img/tools.png"
+          alt=""
+          class="intro__img"
+        />
+      </section>
+
+<div class="portfolio-item-individual">
+    <p></p>
+    <img src="img/backendPhoto.png" alt="">
+    <p>
+        I created a backend for an application that would allow users rent D.I.Y equipment
+         and tools while they are not currently using them. The backend allows full CRUD functionality for Users, Products,
+           Reviews and more. The project utilizes Node.js, Express and MongoDB. All routes are online to
+            interact with <a href="https://www.wheelborrow.xyz/">here</a> .
+    </p>
+    <p>
+        All data is stored in a MongoDB database and the project uses mongoose throughout.
+          Data is sanitized before insertion into the database, preventing any harmful
+          user inputs. 
+    </p>
+    <p>
+        Routes for User Register, Login and Logout are set-up. I have 
+         made provisions for users forgetting their password by using node-mailer to
+          automatically generate an email with a Reset-Password Token Link. 
+          All users passwords are stored hashed in the database using Bcrypt.
+    </p>
+    <p>
+        User authentication is taken care of with JSON Web Tokens and all users are assigned
+         roles. I have also allowed for full CRUD access
+          for an ‘admin’ account, which can only be assigned manually via MongoDB.
+    </p>
+    <p>
+        Once logged in, users can post products to rent, upload photos for products,
+         search for products and leave reviews for products they have used. The
+          database creates a relationship between the product and it's creator, avoiding any security
+           breach and preventing users reviewing their own products. 
+    </p>
+    <p>
+        The API allows for advanced querying methods such as Filtering, Selecting and Sorting
+         results by field. All requests for products and reviews also include pagination,
+          and a limit on the number of results per page can be set. The API even allows users
+          search for products within a certain radius of a location. 
+    </p>
+    <p>
+        For security, I included modules to prevent SQL injections, http param pollution,
+         cross site scripting, an API rate limiter and more. I used NGINX as my reverse
+          proxy and am currently using PM2 as my process manager.
+    </p>
+    <p>
+        For a full look at the API, please visit <a href="https://www.wheelborrow.xyz/">https://www.wheelborrow.xyz/</a>, and to view
+         the code in full, please visit my <a href="https://github.com/BeansG">GitHub Page</a>.
+    </p>
+</div>
+
+    <footer class="footer">
+      <a href="mailto:briangrogan97@gmail.com" class="footer__link"
+        >briangrogan97@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/brian-grogan-a11aa8187/"
+            ><i class="fab fa-linkedin"></i></a
+          >
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/BeansG"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+<html></html>

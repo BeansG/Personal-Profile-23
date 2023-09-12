@@ -1,0 +1,191 @@
+<!-- <script src="https://kit.fontawesome.com/bffeb5711e.js" crossorigin="anonymous"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Allows site to be scaled for mobiles etc. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Grogan Portfolio Website</title>
+    <!-- css file that evens out the differneces between diffferent browsers -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- font awesome link to access images font etc. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link to google fonts used for the site -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/bffeb5711e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- hamburger navigation -->
+    <header>
+      <div class="logo">
+        <h3> <i class="fas fa-map-marker-alt"></i> Dublin, IE  
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">What I Do</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <!-- </throughout, we use the classes for stuling and the id's for anchoring -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I'm <strong>Brian Grogan</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Corporate Finance Associate
+      </p>
+      <img
+        src="img/pro-mug.jpg"
+        alt="image"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I Do</h2>
+      <div class="services">
+        <!-- three services I  provide listed below -->
+        <div class="service">
+          <h3>Professional Qualifications</h3>
+          <p>
+            
+             I have passed Levels 1 & 2 of the CFA exams, scoring in the 90th 
+             percentile both times. These exams focused on a wide range of topics,
+            including Quants, Economics, Fixed Income, Portfolio Management, 
+             Valuations, Derivatives and Alternative Investments. I am also on route to 
+             becoming a Chartered Accountant in 2025. I have passed all 3 Levels of exams, 
+             and will qualify once I have gained the relevant required work experience in March 2025.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Corporate Finance</h3>
+          <p>
+            Experience in one of the world's largest professional services firms - Deloitte - providing 
+            Private Equity clients with asset management services. Responsible for the management
+            of a portfolio of assignments, and the preparation & management of financial data. I assist in developing
+            strategic solutions to complex structures and issues, to maximise the asset realisations for
+            creditors. I have also played supporting roles in Liquidations & Examinerships.
+          </p>
+        </div>
+        <div class="service">
+          <h3>Programming & AWS</h3>
+          <p>Ability to build secure and robust solutions using architectural design principles. 
+            I have completed the AWS Solutions Architect-Asscociate & Cloud Practitioner qualifications, 
+            with a comprehensive understanding of AWS services and asscoiated technologies.    
+            Experience with Javascript, C & SQL. I have included below a selection of my work
+            to date,including a Weather App, a To-Do List and the backend infrastructure
+            for a peer-to-peer social marketplace.
+          </p>
+        </div>
+      </div>
+      <a href="#work" class="btn">Visit My Programming Work</a>
+    </section>
+
+    <!-- About Me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Coporate Finance Associate 
+        </p>
+      </header>
+
+      <div class="about-me__body">
+        <p>
+          I am based in Dublin and hold a First Class Honours degree in Commerce from University 
+          College Dublin. I'm currently studying towards the CFA Qualification and I have recently 
+          completed my final admittance exam to Chartered Accountancy Ireland.
+        </p>
+        <p>
+          After University, I began studying Web Development and Cloud Technologies, completing exams in AWS 
+          cloud products. I find enjoyment from operating outside my comfort zone, and derive satisfaction from learning 
+          new things and overcoming challenges. 
+        </p>
+        <p>
+          I have a natural aptitude for interpesonal relationships, with a background working in customer
+           & client facing roles, taking pleasure from communicting and interacting with new faces. 
+        </p>
+      </div>
+      <img src="img/team.jpg" alt="" class="about-me__img" />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <header>
+        <h2 class="section__title section__title--work">Selection of Work to Date</h2>
+        <!-- <p class="section__subtitle section__subtitle--work">Some of my work to date</p> -->
+      </header>
+      <div class="portfolio">
+        <!-- portfolio item 1 -->
+        <a href="marketplace-project.html" class="portfolio__item">
+          <img src="img/tools.png" alt="" class="portfolio__img" />
+        </a>
+        <!-- portfolio item 2 -->
+        <a href="weather-project.html" class="portfolio__item">
+          <img src="img/weather.jpg" alt="" class="portfolio__img" />
+        </a>
+        <!-- portfolio item 3 -->
+        <a href="todo-project.html" class="portfolio__item">
+          <img src="img/todo.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+      <div class="portfolio">
+        <!-- portfolio item 1 desc -->
+        <a href="recipe-project.html" class="portfolio__item__desc">
+          <h3>Marketplace Backend</h3>
+        </a>
+        <!-- portfolio item 2 desc -->
+        <a href="weather-project.html" class="portfolio__item__desc">
+          <h3>Weather App</h3>
+        </a>
+        <!-- portfolio item 3 -->
+        <a href="todo-project.html" class="portfolio__item__desc">
+          <h3>Todo-list App</h3>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="mailto:briangrogan97@gmail.com" class="footer__link"
+        >grogan.brian@outlook.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/brian-grogan-a11aa8187/"
+            ><i class="fab fa-linkedin"></i></a
+          >
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/BeansG?tab=repositories"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
+<html></html>
